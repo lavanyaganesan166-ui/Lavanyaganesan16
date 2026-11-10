@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Mind Map: Examinations and Marks Are Not Important</title>
+<style>
+  :root {
+    --bg: #faf9f5;
+    --text: #2c2c2a;
+    --muted: #5f5e5a;
+    --purple-bg: #eeedfe; --purple-bd: #534ab7; --purple-tx: #3c3489;
+    --teal-bg: #e1f5ee;   --teal-bd: #0f6e56;   --teal-tx: #085041;
+    --coral-bg: #faece7;  --coral-bd: #993c1d;  --coral-tx: #712b13;
+    --line: #888780;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    padding: 24px 16px 40px;
+    background: var(--bg);
+    color: var(--text);
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+    line-height: 1.5;
+  }
+  .wrap { max-width: 720px; margin: 0 auto; }
+  h1 { font-size: 20px; font-weight: 500; text-align: center; margin: 0 0 20px; }
+
+  .center {
+    background: var(--purple-bg);
+    border: 1px solid var(--purple-bd);
+    color: var(--purple-tx);
+    border-radius: 12px;
+    padding: 14px 20px;
+    text-align: center;
+    max-width: 320px;
+    margin: 0 auto;
+  }
+  .center .title { font-size: 18px; font-weight: 500; }
+  .center .sub { font-size: 13px; opacity: 0.85; }
+
+  .tree {
+    position: relative;
+    margin: 0;
+    padding: 0 0 0 28px;
+    list-style: none;
+  }
+  .tree::before {
+    content: "";
+    position: absolute;
+    left: 10px; top: -1px; bottom: 36px;
+    border-left: 2px solid var(--line);
+  }
+  .spine {
+    width: 2px; height: 20px;
+    background: var(--line);
+    margin: 0 auto;
+  }
+  .tree > li {
+    position: relative;
+    margin: 0 0 14px;
+  }
+  .tree > li::before {
+    content: "";
+    position: absolute;
+    left: -18px; top: 24px;
+    width: 18px;
+    border-top: 2px solid var(--line);
+  }
+  .card {
+    border-radius: 12px;
+    padding: 12px 16px;
+    border: 1px solid;
+  }
+  .card h2 { font-size: 16px; font-weight: 500; margin: 0 0 6px; }
+  .card ul { margin: 0; padding-left: 18px; font-size: 14px; }
+  .card li { margin: 2px 0; }
+
+  .teal  { background: var(--teal-bg);  border-color: var(--teal-bd);  color: var(--teal-tx); }
+  .coral { background: var(--coral-bg); border-color: var(--coral-bd); color: var(--coral-tx); }
+  .purple{ background: var(--purple-bg);border-color: var(--purple-bd);color: var(--purple-tx); }
+
+  .legend {
+    display: flex; flex-wrap: wrap; gap: 14px; justify-content: center;
+    font-size: 12px; color: var(--muted); margin-top: 18px;
+  }
+  .legend span::before {
+    content: ""; display: inline-block; width: 10px; height: 10px;
+    border-radius: 3px; margin-right: 6px; vertical-align: -1px;
+  }
+  .l-teal::before   { background: var(--teal-bd); }
+  .l-coral::before  { background: var(--coral-bd); }
+  .l-purple::before { background: var(--purple-bd); }
+
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #1f1e1d; --text: #f1efe8; --muted: #b4b2a9; --line: #888780;
+      --purple-bg: #3c3489; --purple-bd: #afa9ec; --purple-tx: #eeedfe;
+      --teal-bg: #085041;   --teal-bd: #5dcaa5;   --teal-tx: #e1f5ee;
+      --coral-bg: #712b13;  --coral-bd: #f0997b;  --coral-tx: #faece7;
+    }
+  }
+  @media print {
+    body { background: #fff; }
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <h1>Essay mind map: Examinations and Marks Are Not Important</h1>
+
+  <div class="center">
+    <div class="title">Marks are not success</div>
+    <div class="sub">Marks measure memory on one day, not real ability</div>
+  </div>
+  <div class="spine"></div>
+
+  <ul class="tree">
+    <li>
+      <div class="card teal">
+        <h2>1. Why marks fall short</h2>
+        <ul>
+          <li>Test memorisation, not understanding</li>
+          <li>One exam day can be hit by stress or illness</li>
+          <li>Don't measure creativity, teamwork or character</li>
+        </ul>
+      </div>
+    </li>
+    <li>
+      <div class="card teal">
+        <h2>2. What matters more</h2>
+        <ul>
+          <li>Practical skills: coding, communication, problem-solving</li>
+          <li>Curiosity and lifelong learning</li>
+          <li>Attitude, discipline and honesty</li>
+        </ul>
+      </div>
+    </li>
+    <li>
+      <div class="card teal">
+        <h2>3. Real-life proof</h2>
+        <ul>
+          <li>Employers hire for skills and projects</li>
+          <li>Examples: Thomas Edison, Albert Einstein, Sachin Tendulkar</li>
+          <li>Entrepreneurs and artists succeed without top ranks</li>
+        </ul>
+      </div>
+    </li>
+    <li>
+      <div class="card coral">
+        <h2>4. Harm of mark-chasing</h2>
+        <ul>
+          <li>Stress, anxiety and unhealthy competition</li>
+          <li>Cheating and rote learning</li>
+          <li>Loss of interest in learning</li>
+        </ul>
+      </div>
+    </li>
+    <li>
+      <div class="card coral">
+        <h2>5. Counter-argument</h2>
+        <ul>
+          <li>Exams give discipline and a basic standard</li>
+          <li>Response: they are a tool, not the goal</li>
+        </ul>
+      </div>
+    </li>
+    <li>
+      <div class="card purple">
+        <h2>6. Conclusion</h2>
+        <ul>
+          <li>Learn for knowledge, not just marks</li>
+          <li>Education should build skills and character</li>
+        </ul>
+      </div>
+    </li>
+  </ul>
+
+  <div class="legend">
+    <span class="l-purple">Central idea / conclusion</span>
+    <span class="l-teal">Main arguments</span>
+    <span class="l-coral">Harms / counter-argument</span>
+  </div>
+</div>
+</body>
+</html>
